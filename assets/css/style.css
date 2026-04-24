@@ -136,12 +136,14 @@ nav {
     padding: 100px;
     gap: 50px;
 }
-.features h1 {
+.features h1,
+.reading-journey h1 {
     font-size: 3rem;
     font-family: 'cascadia code';
 }
 .features span,
-.features li {
+.features li,
+.reading-journey span {
     font-size: 1.26rem;
     line-height: 1.35;
 }
@@ -237,13 +239,45 @@ nav {
     left: 53%;
 }
 .reading-journey {
-    background: url(../images/bg1.jpg);
+    background-image: url(../images/bg1.jpg);
     background-size: cover;
     border-radius: 10px;
     margin: 0 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'cascadia code';
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+.no-box {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #082334;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    flex-shrink: 0;
 }
 footer {
-    background: url('../images/bg2.jpg');
+    background-image: url('../images/bg2.jpg');
     background-size: cover;
+    color: #FFF;
     border-radius: 20px 20px 0 0;
 }
