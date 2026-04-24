@@ -110,12 +110,12 @@ nav {
     flex-direction: column;
     gap: 5px;
 }
-.r-star img {
+.stars {
     height: 15px;
     width: 120px;
     transition: transform 0.5s ease;
 }
-.r-star img:hover {
+.stars:hover {
     transform: translateX(30px) scale(1.5);
     
 }
@@ -137,13 +137,17 @@ nav {
     gap: 50px;
 }
 .features h1,
-.reading-journey h1 {
+.reading-journey h1,
+#pricing h1,
+footer h1 {
     font-size: 3rem;
     font-family: 'cascadia code';
 }
 .features span,
 .features li,
-.reading-journey span {
+.reading-journey span,
+#pricing span,
+.reviews span {
     font-size: 1.26rem;
     line-height: 1.35;
 }
@@ -275,9 +279,107 @@ nav {
     font-size: 1.75rem;
     flex-shrink: 0;
 }
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px;
+}
+#pricing h2,
+.reviews h2 {
+    font-size: 2.25rem;
+    font-family: 'cascadia code';
+}
+#pricing h3 {
+    font-size: 1.75rem;
+    font-family: 'cascadia code';
+}
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.starter,
+.pro,
+.enterprise {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #FFF4EE;
+    padding: 20px;
+    border-radius: 10px;
+}
+.pro {
+    background: linear-gradient(120deg, #FCF4F2, #D5E4EB);
+    padding: 40px 20px;
+}
+.p-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pr-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 2px solid #FFF4EE;
+    padding-top: 20px;
+}
+.pr-f {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn3,
+.btn4 {
+    border: 2px solid #082334;
+    color: #082334;
+    background-color: #FFF4EE;
+    font-size: 1.15rem;
+}
+.btn3 {
+    padding: 15px 30px;
+}
+.btn4 {
+    padding: 15px 60px;
+}
+.btn3:hover,
+.btn4:hover {
+    background-color: #082334;
+    color: #FFF4EE;  
+}
+.reviews {
+    margin: 0 100px 100px 100px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 footer {
     background-image: url('../images/bg2.jpg');
     background-size: cover;
     color: #FFF;
     border-radius: 20px 20px 0 0;
+    padding: 100px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn5 {
+    border: 2px solid #FFF4EE;
+    color: #FFF4EE;
+    background: transparent;
+    font-size: 1.15rem;
+    padding: 10px 20px;
+}
+.btn5:hover {
+    background-color: #FFF;
+    color: #082334;  
 }
