@@ -383,3 +383,16 @@ footer {
     background-color: #FFF;
     color: #082334;  
 }
+.ffooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #FFF;
+    padding: 20px;
+}
+.ff-icons {
+    display: flex;
+}
+.ff-icons img {
+    width: 1rem;
+}
